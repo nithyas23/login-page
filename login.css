@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(8, 7, 21);
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: center;
+    font-family: Outfit, sans-serif;
+}
+.box{
+    max-width: 500px;
+    min-width: 300px;
+    width: 50vw;
+    background-image: linear-gradient(90deg, #1c1840, #0d0c22);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(38, 37, 58);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.logo img{
+    width: 50px;
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cross{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 5px 5px 3px 5px;
+    border-radius: 40px;
+    background:rgb(42, 42, 71);
+    cursor: pointer;
+}
+.cross img{
+    width: 15px;
+    height: 15px;
+}
+.header h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.header-center{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header-center>div{
+    color: rgb(131, 128, 185);
+}
+.signup-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signup-btns button{
+    background-color: rgb(74, 47, 195);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: .45s;
+    font-family: Outfit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.signup-btns button img{
+    width: 20px;
+}
+.signup-btns button:hover{
+    scale: 1.02;
+}
+.form,.form-top,.input-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(131, 128, 185);
+}
+.form{
+    gap: 25px;
+}
+.input-parent input{
+    padding: 8px 10px;
+    border: 1px solid rgb(38, 37, 58);
+    border-radius: 5px;
+    background-color: rgb(13, 11, 32);
+    outline: none;
+    font-family: Outfit;
+    color: white;
+}
+.input-parent input:focus{
+    border-color: #3898ec;;
+}
+.input-parent input::placeholder{
+    color: rgb(131, 128, 185);
+}
+.input-parent div{
+    font-size: 12px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btns {
+    display: flex;
+    gap: 10px
+}
+.btns button{
+    flex:1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: Outfit;
+    cursor: pointer;
+    transition: .35s;
+}
+.btns button:hover{
+    scale: 1.02;
+}
+.btns button:nth-child(1){
+    background: transparent;
+    border: 0.5px solid white;
+    color: rgb(131, 128, 185);
+}
+
+.btns button:nth-child(2){
+    background-color:rgb(74, 47, 195) ;
+}
+.or{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: rgb(131, 128, 185);
+}
+.or *{
+    flex: 1;
+}
+.or hr{
+   border:.125px solid rgb(131, 128, 185);
+   height: 0px;
+}
